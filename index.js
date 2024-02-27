@@ -43,7 +43,7 @@ app.post('/translate', async (req, res) => {
             const inputText = req.body.text;
 
             // Check if the text is in English
-            if (isEnglish(inputText) === 'en') {
+            if (isEnglish(inputText) == 'en') {
                 // Call the translation function
                 const translatedText = await translateToFrench(inputText);
 
